@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="js/script.js" defer></script>
-    <title>JS-PPY</title>
+    <script src="js/tarea1.js" defer></script>
+    <script src="js/tarea2.js" defer></script>
+    <script src="js/tarea3.js" defer></script>
+    <title>Wordle-PPY</title>
 </head>
 <body>
     <h1>Wordle PPY</h1>
-    <input type="text" id="guess-input">
+    <input type="text" id="guess-input" maxlength="5" pattern="a-z" required>
     <button id="guess-button">Intentar</button>
     <div id="grid"></div>
     <p id="guesses">

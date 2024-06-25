@@ -12,16 +12,18 @@ h1 {
     font-size: 18px;
     width: 250px;
     border: 1px solid #ccc;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
 }
 #guess-button {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #0CBABA;
+    background-color: #2684e8;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
 }
 button:active {
     transform: scale(0.95);
@@ -29,11 +31,14 @@ button:active {
 
 .letter {
     border: 1px solid black;
+    border-radius: 5px;
     padding: 3px;
     margin: 3px;
+    font-size: larger;
     min-width: 20px;
     text-align: center;
-    display: inline-block
+    display: inline-block;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
 }
 
 .row{
@@ -42,4 +47,10 @@ button:active {
 
 .input-area{
     margin: 30px;
+}
+
+#grid{
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
 }
