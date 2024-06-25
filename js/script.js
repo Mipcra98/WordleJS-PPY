@@ -37,7 +37,6 @@ let valido
 
 function intentar(){
     INTENTO = leerIntento();
-    console.log(INTENTO)
     if(validarEntrada(INTENTO)){
         evaluar();
     }else{
@@ -59,7 +58,7 @@ const lista = ["abeto", "actor", "aguas", "agudo", "alado", "albas", "altar", "a
 const secreta = lista[Math.floor(Math.random() * lista.length)].toLocaleUpperCase();
 //secreta = secreta.toUpperCase();
 
-console.log(secreta)
+console.log("jaja, creíste que porías ver algo aca?, pues si, sigue interactuando...")
 
 function evaluar(){
     let GRID = document.getElementById("grid");
@@ -88,7 +87,7 @@ function evaluar(){
     cantin = cantin - 1
     console.log("Intentos restantes",cantin)
     
-        /*}else{            //Mi algoridmo para verificar si existe la letra en otra ubicación
+        /*}else{            //1er algoridmo para verificar si existe la letra en otra ubicación
             for (l in secreta){
                 if (secreta[l]===INTENTO[i]){
                     console.log(INTENTO[i],"Amarillo")
@@ -101,6 +100,7 @@ function evaluar(){
         
     if (cantin==0){
         terminar("<h1>Has perdido!😖</h1>")
+        console.log("La palabra secreta fué",secreta)
         return
     }
 }
